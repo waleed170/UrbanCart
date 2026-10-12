@@ -48,3 +48,9 @@ def test_no_results_message_appears_for_unmatched_search(page: Page):
 
     expect(page.locator("#product-grid .product-card")).to_have_count(0)
     expect(page.locator("#empty-message")).to_be_visible()
+
+
+def test_search_field_is_visible(page: Page):
+    open_homepage(page)
+
+    expect(page.locator("#search-input")).to_be_visible()
