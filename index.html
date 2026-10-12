@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover thoughtfully selected home and lifestyle essentials at UrbanCart.">
+    <title>UrbanCart | Everyday Living, Elevated</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#" aria-label="UrbanCart home">
+            Urban<span>Cart.</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">Our Story</a>
+        </nav>
+
+        <button class="cart-button" id="cart-button" type="button">
+            Bag (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">THOUGHTFULLY CHOSEN. BEAUTIFULLY MADE.</p>
+                <h1>Make room for<br>better living.</h1>
+                <p>
+                    Everyday essentials and timeless finds
+                    to make your space feel more like you.
+                </p>
+                <a class="primary-button" href="#shop">Explore the collection</a>
+            </div>
+
+            <div class="hero-image" role="img"
+                 aria-label="Warm, thoughtfully styled contemporary living space">
+            </div>
+        </section>
+
+        <section class="shop-section" id="shop">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE URBANCART EDIT</p>
+                    <h2>Find your next favourite.</h2>
+                </div>
+                <p>Useful things. Beautiful details.</p>
+            </div>
+
+            <div class="shop-controls">
+                <label for="search-input">Search products</label>
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Try 'lamp' or 'ceramic'"
+                >
+
+                <label for="category-filter">Category</label>
+                <select id="category-filter">
+                    <option value="all">All products</option>
+                    <option value="Home Decor">Home Decor</option>
+                    <option value="Lighting">Lighting</option>
+                    <option value="Kitchen">Kitchen</option>
+                    <option value="Textiles">Textiles</option>
+                </select>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                <!-- JavaScript will render product cards here. -->
+            </div>
+
+            <p class="empty-message" id="empty-message" hidden>
+                No products found. Try another search.
+            </p>
+        </section>
+
+        <section class="about-section" id="about">
+            <p class="eyebrow">A LITTLE ABOUT US</p>
+            <h2>Good design belongs in everyday life.</h2>
+            <p>
+                At UrbanCart, we believe the smallest details can make
+                an ordinary day feel special. We're here to help you
+                find pieces you'll love living with.
+            </p>
+        </section>
+
+        <section class="newsletter-section">
+            <h2>A little inspiration, delivered.</h2>
+            <p>Discover new arrivals and ideas for everyday living.</p>
+
+            <form id="newsletter-form">
+                <label for="email-input">Your email address</label>
+                <input
+                    type="email"
+                    id="email-input"
+                    placeholder="you@example.com"
+                    required
+                >
+                <button type="submit">Sign me up</button>
+            </form>
+
+            <p id="newsletter-message" role="status"></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo" href="#home">Urban<span>Cart.</span></a>
+        <p>Thoughtful finds for everyday living.</p>
+        <p>&copy; 2026 UrbanCart. Training project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
